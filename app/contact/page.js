@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactPage from '../components/contactPage'
+import ContactPage from '../components/ContactPage.jsx'
 
 const Home = () => {
   return (

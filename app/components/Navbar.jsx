@@ -9,7 +9,7 @@ import { GrServices } from "react-icons/gr";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { ImBlog } from "react-icons/im";
 import { RiContactsBook3Line } from "react-icons/ri";
-import Profile from './Profile'
+import Profile from './profile.jsx'
 
 
 const Navbar = () => {

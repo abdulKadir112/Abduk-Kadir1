@@ -10,7 +10,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 
 
-const Card = () => {
+const Profile = () => {
   return (
     <div className="relative group">
       <div className="profileCard_container relative p-10 border-2 border-dashed border-transparent rounded-full border-spacing-4 hover:border-gray-400/50">
@@ -63,4 +63,4 @@ const Card = () => {
   );
 }
 
-export default Card;
+export default Profile;

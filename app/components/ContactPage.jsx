@@ -1,4 +1,3 @@
-import React from 'react'
 import Container from '../layer/Container'
 import BreadCambe from '../layer/BreadCambe'
 
@@ -16,7 +15,7 @@ const ContactPage = () => {
                         <a href="mailto:abdulkadir112k@gmail.com" className='font-semibold italic text-3xl text-[#525252]'>abdulkadir112k@gmail.com</a>
                     </div>
                     <div>
-                        <a href="https://www.linkedin.com/in/abdulkadir112k/" className="hover:scale-110 duration-300 text-blue-500">linkedin</a>
+                        {/* <a href="https://www.linkedin.com/in/abdulkadir112k/" className="hover:scale-110 duration-300 text-blue-500">linkedin</a> */}
                     </div>
                 </div>
             </Container>
