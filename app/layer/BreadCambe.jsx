@@ -9,7 +9,7 @@ const BreadCambe = () => {
 
   return (
     <div>
-        <h1 className='text-2xl font-semibold italic text-[#141313] pb-4'>{pathname.split("/") [1]}</h1>
+        <h1 className='text-xl font-semibold italic text-[#141313] pb-4'>{pathname.split("/") [1]}</h1>
     </div>
   )
 }
