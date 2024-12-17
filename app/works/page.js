@@ -4,6 +4,10 @@ import ProjectCard from '../layer/ProjectCard';
 import BreadCambe from '../layer/BreadCambe';
 import fresh from '../../public/fresh.png';
 import upland from '../../public/upland.jpg';
+import restaurant from '../../public/restaurant.png';
+import numbergame from '../../public/number-game.png';
+import BMI from '../../public/BMI.png';
+import Agenc from '../../public/Agence.png';
 
 // Example project data array
 const projectData = [
@@ -21,6 +25,34 @@ const projectData = [
     link: 'https://upland-seven.vercel.app',
     likes: '2k',
   },
+  {
+    title: 'Gericht HTML and Tailwind',
+    description: 'An advanced restaurant platform built with HTML and Tailwind.',
+    imageSrc: restaurant,
+    link: 'https://abdulkadir112.github.io/tailwind-main/index.html',
+    likes: '1.5k',
+  },
+  {
+    title: 'Number Game JavaScript',
+    description: 'An advanced number game built with JavaScript.',
+    imageSrc: numbergame,
+    link: 'https://abdulkadir112.github.io/NumberGame/',
+    likes: '1k',
+  },
+  {
+    title: 'BMI Calculator JavaScript',
+    description: 'An advanced BMI calculator built with JavaScript.',
+    imageSrc: BMI,
+    link: 'https://abdulkadir112.github.io/BMI/',
+    likes: '2k',
+  },
+  {
+    title: 'Agenc HTML and CSS',
+    description: 'An advanced agency landing page built with HTML and CSS.',
+    imageSrc: Agenc,
+    link: 'https://abdulkadir112.github.io/agenc/',
+    likes: '3k',
+  },
   // Add more projects as needed...
 ];
 
@@ -35,7 +67,7 @@ const Home = () => {
         <h1 className="text-5xl font-bold text-[#141313] pb-12">Recent Projects</h1>
 
         {/* Project Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8 pr-20">
           {projectData.map((project, index) => (
             <ProjectCard
               key={index}

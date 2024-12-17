@@ -14,8 +14,8 @@ const ProjectCard = ({ title, description, imageSrc, link, likes }) => {
   return (
     <div className="rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
       {/* Image Section */}
-      <div className="w-72 h-48 relative">
-        <Link href={link}>
+      <div className="w-96 h-48 relative">
+        <Link href={link} className='overflow-hidden object-cover'>
           <Image
             src={imageSrc}
             alt={`${title} project thumbnail`}

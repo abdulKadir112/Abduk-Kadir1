@@ -26,7 +26,7 @@ const ContactPage = () => {
             <div className="mb-8">
               <h3 className="text-lg font-semibold text-gray-800">Address:</h3>
               <p className="text-gray-600">
-                249 King Sir, 05th Floor, Ultra House Building, Melbourne, VIC 3000, London.
+                 Dhanmondi, Dhaka Bangladesh.
               </p>
             </div>
 
