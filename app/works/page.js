@@ -3,6 +3,7 @@ import Container from '../layer/Container';
 import ProjectCard from '../layer/ProjectCard';
 import BreadCambe from '../layer/BreadCambe';
 import fresh from '../../public/fresh.png';
+import upland from '../../public/upland.jpg';
 
 // Example project data array
 const projectData = [
@@ -14,10 +15,10 @@ const projectData = [
     likes: '1k',
   },
   {
-    title: 'E-Commerce App',
-    description: 'An advanced e-commerce platform built with Next.js.',
-    imageSrc: fresh,
-    link: 'https://example.com/ecommerce',
+    title: 'Upland Next.js',
+    description: 'An advanced mobile app platform built with Next.js.',
+    imageSrc: upland,
+    link: 'https://upland-seven.vercel.app',
     likes: '2k',
   },
   // Add more projects as needed...
