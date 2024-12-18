@@ -3,7 +3,7 @@ import Container from '../layer/Container';
 
 const ContactPage = () => {
   return (
-    <div className="bg-gray-50 min-h-screen flex flex-col items-center justify-center">
+    <div className="bg-gray-50 min-h-screen overflow-scroll flex flex-col items-center justify-center">
       {/* Hero Section */}
       <div className="w-full text-gray-800 py-20 text-center">
         <h1 className="text-5xl font-bold">Contact Me</h1>

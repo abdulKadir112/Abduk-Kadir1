@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
             <div>
               <Navbar/>
             </div>
-            <div className="w-full h-full">
+            <div className="w-full h-full overflow-y-scroll">
               {children}
             </div>
          </div>

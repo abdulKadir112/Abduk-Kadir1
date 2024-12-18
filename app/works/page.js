@@ -8,6 +8,7 @@ import restaurant from '../../public/restaurant.png';
 import numbergame from '../../public/number-game.png';
 import BMI from '../../public/BMI.png';
 import Agenc from '../../public/Agence.png';
+import tech from '../../public/tach.png';
 
 // Example project data array
 const projectData = [
@@ -40,6 +41,13 @@ const projectData = [
     likes: '1k',
   },
   {
+    title: 'Tach Store',
+    description: 'An advanced number game built with React.js.',
+    imageSrc: tech,
+    link: 'https://tach-store.vercel.app/',
+    likes: '1k',
+  },
+  {
     title: 'BMI Calculator JavaScript',
     description: 'An advanced BMI calculator built with JavaScript.',
     imageSrc: BMI,
@@ -67,7 +75,7 @@ const Home = () => {
         <h1 className="text-5xl font-bold text-[#141313] pb-12">Recent Projects</h1>
 
         {/* Project Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8 pr-20">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8 pr-20">
           {projectData.map((project, index) => (
             <ProjectCard
               key={index}
