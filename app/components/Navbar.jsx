@@ -65,8 +65,7 @@ const Navbar = () => {
           <div className="flex items-center gap-1 pt-4">
             <a
               className="text-slate-100 font-semibold text-xl uppercase px-3 hover:underline hover:underline-offset-8"
-              href="../../public/abdulKadir.pdf"
-              download={"abdulKadir.pdf"}
+              href="https://drive.google.com/file/d/1RAhCTLHVcr_AWakxPGeya0jlTbc2wfYt/view?usp=sharing"
             >
               Resume
             </a>

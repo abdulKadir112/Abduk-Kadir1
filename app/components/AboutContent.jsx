@@ -49,7 +49,7 @@ const AboutContent = () => {
                 Frontend Developer with <span className="text-blue-500">React</span>
               </p>
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1RAhCTLHVcr_AWakxPGeya0jlTbc2wfYt/view?usp=sharing"
                 className="flex items-center gap-2.5 justify-center px-10 py-4 font-semibold mt-10 text-white bg-blue-500 rounded hover:bg-blue-600"
               >
                 Download Resume <FaArrowDown />

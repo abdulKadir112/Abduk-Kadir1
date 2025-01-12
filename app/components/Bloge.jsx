@@ -1,6 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import react from '../../public/react.webp';
+import next from '../../public/next.webp';
+import html from '../../public/html.webp';
 
 // Example blog data
 const blogPosts = [
@@ -8,7 +11,7 @@ const blogPosts = [
     id: 1,
     title: 'Mastering React: Tips and Tricks',
     description: 'Learn how to write better and optimized React code for modern web development.',
-    image: '/blog1.jpg', // Replace with your image path
+    image: react, // Replace with your image path
     date: 'December 15, 2024',
     link: '/blog/mastering-react',
   },
@@ -16,7 +19,7 @@ const blogPosts = [
     id: 2,
     title: 'Next.js Performance Optimization',
     description: 'Understand how to make your Next.js applications faster and more efficient.',
-    image: '/blog2.jpg', // Replace with your image path
+    image: next, // Replace with your image path
     date: 'December 10, 2024',
     link: '/blog/nextjs-performance',
   },
@@ -24,7 +27,7 @@ const blogPosts = [
     id: 3,
     title: 'CSS in JS: Pros and Cons',
     description: 'Exploring the benefits and drawbacks of using CSS-in-JS libraries in modern projects.',
-    image: '/blog3.jpg', // Replace with your image path
+    image: html, // Replace with your image path
     date: 'December 5, 2024',
     link: '/blog/css-in-js',
   },

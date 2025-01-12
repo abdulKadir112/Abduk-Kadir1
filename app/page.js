@@ -3,7 +3,7 @@ import Banner from './components/Banner'
 
 const Home = () => {
   return (
-    <div className='w-[1600px] bgVideo'>
+    <div className='w-[1600px]'>
            <Banner/>
     </div>
   )
