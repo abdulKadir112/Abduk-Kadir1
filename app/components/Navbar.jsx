@@ -58,9 +58,9 @@ const Navbar = () => {
         {/* Social Links */}
         <div className="flex flex-col items-center mt-8">
           <div className="flex gap-4 text-3xl text-slate-100">
-            <FaGithub className="cursor-pointer hover:scale-90" />
-            <FaFacebookF className="cursor-pointer hover:scale-90" />
-            <FaLinkedinIn className="cursor-pointer hover:scale-90" />
+            <Link href={"https://github.com/abdulKadir112"}><FaGithub className="cursor-pointer hover:scale-90" /></Link>
+            <Link href={"https://web.facebook.com/mdkadir1118/"}><FaFacebookF className="cursor-pointer hover:scale-90" /></Link>
+            <Link href={"https://www.linkedin.com/in/md-abdul-kadir-9079642b6/"}><FaLinkedinIn className="cursor-pointer hover:scale-90" /></Link>
           </div>
           <div className="flex items-center gap-1 pt-4">
             <a
