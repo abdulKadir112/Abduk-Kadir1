@@ -65,7 +65,7 @@ const Navbar = () => {
           <div className="flex items-center gap-1 pt-4">
             <a
               className="text-slate-100 font-semibold text-xl uppercase px-3 hover:underline hover:underline-offset-8"
-              href="https://drive.google.com/file/d/1RAhCTLHVcr_AWakxPGeya0jlTbc2wfYt/view?usp=sharing"
+              href="https://drive.google.com/file/d/1D6QoFYyUMS-e1_9wa4D6h1VfHpv4VCtr/view?usp=sharing"
             >
               Resume
             </a>
@@ -78,14 +78,14 @@ const Navbar = () => {
     <div
         className={`${
           isOpen ? "hidden" : "flex"
-        }  md:hidden justify-center gap-x-10 items-center w-full text-2xl bg-slate-400 py-4 fixed top-0 z-[1100] `}
+        }  md:hidden justify-center gap-x-10 items-center w-full bg-slate-400 py-4 fixed top-0 z-[1100] `}
       >
-        <Link href="/" ><IoMdHome className="text-white" /></Link>
-        <Link href="about" ><ImProfile className="text-white" /></Link>
-        <Link href="services" ><GrServices className="text-white" /></Link>
-        <Link href="works" ><MdOutlineWorkOutline className="text-white" /></Link>
-        <Link href="blogs" ><ImBlog className="text-white" /></Link>
-        <Link href="contact" ><RiContactsBook3Line className="text-white" /></Link>
+        <Link href="/" className="flex items-center" ><IoMdHome className="text-white" />home</Link>
+        <Link href="about" ><ImProfile className="text-white" />about</Link>
+        <Link href="services" ><GrServices className="text-white" />services</Link>
+        <Link href="works" ><MdOutlineWorkOutline className="text-white" />works</Link>
+        <Link href="blogs" ><ImBlog className="text-white" />blog</Link>
+        <Link href="contact" ><RiContactsBook3Line className="text-white" />contact</Link>
         
       </div>
     </>
