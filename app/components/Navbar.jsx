@@ -78,14 +78,14 @@ const Navbar = () => {
     <div
         className={`${
           isOpen ? "hidden" : "flex"
-        }  md:hidden justify-center gap-x-10 items-center w-full bg-slate-400 py-4 fixed top-0 z-[1100] `}
+        }  md:hidden justify-center gap-x-7 items-center w-[96%] bg-slate-400 py-4 fixed bottom-0 z-[1100] `}
       >
-        <Link href="/" className="flex items-center" ><IoMdHome className="text-white" />home</Link>
-        <Link href="about" ><ImProfile className="text-white" />about</Link>
-        <Link href="services" ><GrServices className="text-white" />services</Link>
-        <Link href="works" ><MdOutlineWorkOutline className="text-white" />works</Link>
-        <Link href="blogs" ><ImBlog className="text-white" />blog</Link>
-        <Link href="contact" ><RiContactsBook3Line className="text-white" />contact</Link>
+        <Link className="flex flex-col items-center" href="/"><IoMdHome className="text-white" /><p className="text-white text-[10px]">Home</p></Link>
+        <Link className="flex flex-col items-center" href="about" ><ImProfile className="text-white" /><p className="text-white text-[10px]">About</p></Link>
+        <Link className="flex flex-col items-center" href="services" ><GrServices className="text-white" /><p className="text-white text-[10px]">Services</p></Link>
+        <Link className="flex flex-col items-center" href="works" ><MdOutlineWorkOutline className="text-white" /><p className="text-white text-[10px]">Works</p></Link>
+        <Link className="flex flex-col items-center" href="blogs" ><ImBlog className="text-white" /><p className="text-white text-[10px]">Blogs</p></Link>
+        <Link className="flex flex-col items-center" href="contact" ><RiContactsBook3Line className="text-white" /><p className="text-white text-[10px]">Contact</p></Link>
         
       </div>
     </>
