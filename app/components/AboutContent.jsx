@@ -18,15 +18,17 @@ const AboutContent = () => {
 
   return (
     <div>
-      <Container className="pt-12 pl-24 pb-5">
-        <div className="pb-24">
+      <Container className="pt-12 px-5 md:px-24 pb-5">
+        <div className="pb-12 text-center md:text-left">
           <p className="font-semibold italic text-lg text-gray-800">Nice to meet you!</p>
-          <h2 className="text-5xl font-bold text-gray-800 pt-4">Welcome to...</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 pt-4">Welcome to...</h2>
         </div>
-        <div className="max-w-[1600px] flex gap-x-40 items-center">
+
+        {/* Main Content Container */}
+        <div className="max-w-[1600px] grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Section */}
-          <div>
-            <div className="group relative w-[350px]">
+          <div className="flex flex-col items-center">
+            <div className="group relative w-[280px] md:w-[350px]">
               <Image
                 src={fream}
                 alt="Decorative frame"
@@ -39,52 +41,54 @@ const AboutContent = () => {
                 width={500}
                 className="absolute top-0 right-0 group-hover:rotate-180 transition-all duration-1000 group-hover:scale-110"
               />
-              <div className="w-[230px] h-[240px] bg-transparent absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-[15deg]">
+              <div className="w-[180px] h-[200px] md:w-[230px] md:h-[240px] bg-transparent absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-[15deg]">
                 <Image src={img} alt="Abdul Kadir portrait" className="w-full h-full object-contain" />
               </div>
             </div>
-            <div className="text-center pt-16">
-              <h1 className="text-5xl font-bold text-gray-800 pt-4">Abdul Kadir</h1>
-              <p className="font-semibold italic text-lg text-gray-800 pt-4 pb-8">
+            <div className="text-center pt-8 md:pt-16">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-800 pt-4">Abdul Kadir</h1>
+              <p className="font-semibold italic text-lg text-gray-800 pt-4 pb-6">
                 Frontend Developer with <span className="text-blue-500">React</span>
               </p>
               <a
                 href="https://drive.google.com/file/d/1D6QoFYyUMS-e1_9wa4D6h1VfHpv4VCtr/view?usp=sharing"
-                className="flex items-center gap-2.5 justify-center px-10 py-4 font-semibold mt-10 text-white bg-blue-500 rounded hover:bg-blue-600"
+                className="flex items-center gap-2.5 justify-center px-6 md:px-10 py-3 md:py-4 font-semibold mt-6 md:mt-10 text-white bg-blue-500 rounded hover:bg-blue-600"
               >
                 Download Resume <FaArrowDown />
               </a>
             </div>
           </div>
+
           {/* Right Section */}
-          <div className="w-[600px]">
-            <div className="flex gap-x-20 border-b-2 border-gray-400 pb-6">
-              <div className="flex flex-col gap-10 text-start">
-                <div className="flex items-center gap-2 text-lg text-gray-800">
+          <div className="w-full">
+            <div className="flex flex-col md:flex-row gap-10 md:gap-x-20 border-b-2 border-gray-400 pb-6">
+              <div className="flex flex-col gap-6 md:gap-10 text-center md:text-start">
+                <div className="flex items-center gap-2 text-lg text-gray-800 justify-center md:justify-start">
                   <FcCallback />
                   <Link href="tel:+8801729628402">+88 01729628402</Link>
                 </div>
-                <div className="flex items-center gap-2 text-lg text-gray-800">
+                <div className="flex items-center gap-2 text-lg text-gray-800 justify-center md:justify-start">
                   <BiLogoGmail className="text-blue-400" />
                   <Link href="mailto:abdulkadir112k@gmail.com">abdulkadir112k@gmail.com</Link>
                 </div>
               </div>
-              <div className="flex flex-col gap-10 text-start">
-                <div className="flex items-center gap-2 text-lg text-gray-800">
+              <div className="flex flex-col gap-6 md:gap-10 text-center md:text-start">
+                <div className="flex items-center gap-2 text-lg text-gray-800 justify-center md:justify-start">
                   <LuCalendarDays className="text-blue-400" />
                   <p>{myAge} - years</p>
                 </div>
-                <div className="flex items-center gap-2 text-lg text-gray-800">
+                <div className="flex items-center gap-2 text-lg text-gray-800 justify-center md:justify-start">
                   <IoLocationSharp className="text-blue-400" />
                   <p>Dhaka, Bangladesh</p>
                 </div>
               </div>
             </div>
-            <div className="flex gap-x-10 pt-10">
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
               {/* Experience Section */}
-              <div className="max-w-[315px]">
-                <div className="flex items-center gap-2">
-                  <p className="text-6xl font-bold text-blue-500">2+</p>
+              <div className="max-w-full text-center md:text-start">
+                <div className="flex items-center justify-center md:justify-start gap-2">
+                  <p className="text-5xl md:text-6xl font-bold text-blue-500">2+</p>
                   <div>
                     <h2 className="font-semibold text-base text-gray-800 italic">Years</h2>
                     <h1 className="font-semibold text-base text-gray-800 italic">Experience</h1>
@@ -96,9 +100,9 @@ const AboutContent = () => {
                 </p>
               </div>
               {/* Clients Section */}
-              <div className="max-w-[315px]">
-                <div className="flex items-center gap-2">
-                  <p className="text-6xl font-bold text-blue-500">12+</p>
+              <div className="max-w-full text-center md:text-start">
+                <div className="flex items-center justify-center md:justify-start gap-2">
+                  <p className="text-5xl md:text-6xl font-bold text-blue-500">12+</p>
                   <div>
                     <h2 className="font-semibold text-base text-gray-800 italic">Clients</h2>
                     <h1 className="font-semibold text-base text-gray-800 italic">Worldwide</h1>
@@ -110,12 +114,14 @@ const AboutContent = () => {
                 </p>
               </div>
             </div>
-            <div>
-              <p className="flex gap-2 text-lg text-blue-200 mt-12 border-2 border-gray-400 p-3 bg-gray-700 shadow-lg">
-                <RiDoubleQuotesL className="text-gray-400 text-4xl" />
+
+            {/* Quote Section */}
+            <div className="mt-10">
+              <p className="flex flex-col md:flex-row gap-2 text-lg text-blue-200 mt-6 md:mt-12 border-2 border-gray-400 p-3 bg-gray-700 shadow-lg text-center">
+                <RiDoubleQuotesL className="text-gray-400 text-4xl mx-auto md:mx-0" />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ab reiciendis quod repudiandae nesciunt
                 odio eligendi delectus amet veniam.
-                <RiDoubleQuotesL className="rotate-180 text-gray-400 text-4xl" />
+                <RiDoubleQuotesL className="rotate-180 text-gray-400 text-4xl mx-auto md:mx-0" />
               </p>
             </div>
           </div>
